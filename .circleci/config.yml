@@ -15,6 +15,10 @@ jobs:
       - checkout
       # install dependencies in both apps
       - run:
+          name: Set Environment Variable
+          command: |
+            npm run set:env
+      - run:
           name: Front-End Install
           command: |
             npm run frontend:install
@@ -39,6 +43,10 @@ jobs:
       - aws-cli/setup
       - eb/setup
       - run:
+          name: Set Environment Variable
+          command: |
+            npm run set:env
+      - run:
           name: Front-End Install
           command: |
             npm run frontend:install
@@ -54,6 +62,14 @@ jobs:
           name: Back-End Build
           command: |
             npm run backend:build
+      - run:
+          name: Front End Test
+          command: |
+              npm run frontend:test
+      - run:
+          name: Back-End Test
+          command: |
+            npm run backend:test
       - run:
           name: Front End Deploy
           command: |
