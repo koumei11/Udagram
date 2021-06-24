@@ -24,9 +24,6 @@ export function getGetSignedUrl(key: string): string {
     Expires: signedUrlExpireSeconds,
   });
 
-  console.log('s3 Information')
-  console.log(s3Info)
-
   return s3Info;
 }
 
