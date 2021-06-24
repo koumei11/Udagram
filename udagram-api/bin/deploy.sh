@@ -1,1 +1,0 @@
-eb init Udagram-production -r ap-northeast-1 && eb deploy
