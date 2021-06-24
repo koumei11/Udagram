@@ -12,6 +12,7 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - node/install
+      - checkout
       # install dependencies in both apps
       - run:
           name: Front-End Install
@@ -50,5 +51,5 @@ workflows:
       - deploy:
           filters:
             branches:
-              only: master
+              only: main
           
