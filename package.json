@@ -8,7 +8,7 @@
         "backend:build": "cd udagram-api && npm run build",
         "backend:test": "cd udagram-api && npm run test",
         "backend:deploy": "cd udagram-api && npm run deploy",
-        "set:env": "chmod +x ./bin/envset.sh && ./bin/envset.sh"
+        "set:env": "cd udagram-api && npm run env"
     },
     "devDependencies": {}
 }

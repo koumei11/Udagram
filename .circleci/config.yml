@@ -15,10 +15,6 @@ jobs:
       - checkout
       # install dependencies in both apps
       - run:
-          name: Set Environment Variable
-          command: |
-            npm run set:env
-      - run:
           name: Front-End Install
           command: |
             npm run frontend:install
