@@ -1,1 +1,1 @@
-aws s3 cp --recursive --acl public-read ../www s3://cf-113871546264-ap-northeast-1/
+aws s3 cp --recursive --acl public-read ./www s3://cf-113871546264-ap-northeast-1/
