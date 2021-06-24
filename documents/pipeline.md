@@ -32,6 +32,7 @@ But I write short description below for the detail.
 5. Backend build starts. All built files go into /www folder.
 
 ・Deploy
+
 This is almost the same as Build process.
 But two more processes for deployment. This happens only when changes are made on main branch.
 
